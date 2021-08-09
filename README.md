@@ -77,4 +77,17 @@
 - DOM manipulation can be safer than `innerHTML`, but requires more code and can be slower; allows you to create element `createElement()` and text nodes `createTextNode()`, and then attach them `appendChild()` to the DOM tree or remove them (store element, store parent, remove the element from containing element).
 - In older browsers, implementation of the DOM is inconsistent (why jQuery is popular).
 - Browsers offer tools for viewing the DOM tree.
+
+### Chapter 6 / Events
+- Events are teh browser's way of indicating when something has happened (such as when a page has finished loading or a button has been clicked).
+- Binding is the process of stating which event you are waiting to happen, and which element you are waiting for that event to happen upon.
+- Three ways to bind an event to an element: HTML event handlers < Traditional DOM event handlers < DOM level 2 event listeners.
+  - HTML event handlers (do not use) do not separate the HTML from JS (`onblur="checkUsername()"`)
+  - Event handlers: `element.onevent = functionName;`
+  - Event listeners: `element.addEventListener('event', functionName [, Boolean])`; the () are removed from the function because they would indicate that the function should run as the page loads (rather than when the event fires); use `attachEvent` for IE8 and older.
+- When an event occurs on an element, it can trigger a JavaScript function; when this function then changes the web page in some way, it feels interactive because it has responded to the user.
+- You can use event delegation to monitor for events that happen on all of the children of an element. 
+- The most commonly used events are W3C DOM events, although there are others in the HTML5 specification as well as browser-specific events.
+
+### Chapter 7 / JQuery
   
