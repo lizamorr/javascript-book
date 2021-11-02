@@ -3,17 +3,17 @@
 
 ### Chapter 1 / The ABC of Programming:
 - A script is a series of instructions that the computer can follow in order to achieve a goal.
-  - Each time a script tuns, it might only use a subset of all the instructions.  
+  - Each time a script runs, it might only use a subset of all the instructions.  
   - To approach writing a script, break down your goal into a series of tasks and then work out each step needed to complete a task (flowchart).
   - To write a script, it is best to keep JavaScript code it its own file (.js).
-  - The HTML `<script>` element is used in HTML pages to tell the browser to load the JavaScript file path
-  - If you view the source code of the page in the browser, the JavaScript will not have changed the HTML, because the script works with the model of the web page that the browser has created.
+  - The HTML `<script>` element is used in HTML pages to tell the browser to load the JavaScript file path.
+  - If you view the source code of the page in the browser, the JavaScript will not have changed the HTML because the script works with the model of the web page that the browser has created.
 - Computers create models of the world using data.
   - Objects can have: properties that tell us about the object; methods that perform tasks using the properties of that object; events which are triggered when a user interacts with the computer.
   - Web browsers use HTML markup to create a model of the web page. Each element creates it own node (type of object).
   - To make web pages interactive, you write code that uses the browser's model of the web page.
   
-### Chapter 2 / Basic Javascript Instructions:
+### Chapter 2 / Basic JavaScript Instructions:
 - A script is made up of a series of statements.
 - Scripts contain very precise instructions.
 - Variables are used to temporarily store pieces of information used in the script.
@@ -28,19 +28,19 @@
 - Parameters are used when the function is declared.
 - Arguments are used when calling a function.
 - Use anonymous functions and IIFES (immediately invoked function expressions) when code only needs to be run once.
-- Local or function-level variables are created in side a function and can only be used in that function.
+- Local or function-level variables are created inside a function and can only be used in that function.
 - Global variables are created outside a function and can be used anywhere within the script. They are stored in memory for as long as the web page is loaded into the web broswer.
 - An object is a series of variables and functions that represent something from the world around you.
-  - Variables are known as properties of the object
-  - Functions are known as the methods of the object
+  - Variables are known as properties of the object.
+  - Functions are known as the methods of the object.
 - If you want to access items via property name or key, use an object (must be unique); if the order of the items is important, use an array.
 - Objects created with literal notation are good when are you are storing/transmitting data between applications and for global or configuration objects that set up information for the page.
 - Objects created with constructors are good when you have lots of objects used with similar functionality within a page and when a complex object might not be used in code.
 - Arrays are objects but the key for each value is its index number.
 - Three groups of built-in objects:
-  - Browser Object Model: creates a model of the browser tab or window; the topmost object is the window object
+  - Browser Object Model: creates a model of the browser tab or window; the topmost object is the window object.
   - Document Object Model (DOM): creates a model of the current web page; the topmost object is the document object, which represents the page as whole.
-  - Global JavaScript Objects: group of individual objects that relate to different parts of the JavaScript language (String, Number, Boolean, Date, Math, Regex)
+  - Global JavaScript Objects: group of individual objects that relate to different parts of the JavaScript language (String, Number, Boolean, Date, Math, Regex).
 - 6 Data Types:
   - Simple/Primitive: String, Number, Boolean, Undefined, Null
   - Complex: Object (arrays, functions)
@@ -48,14 +48,14 @@
 ### Chapter 4 / Decisions & Loops:
 - Comparison operators
   - `==` is equal to vs `===` is strict equal to; strict compares two values to check that both the data type and value are the same.
-  - `===, !==, ==, !=, <, >, <=, >=` are used to ompare two operands
-- Logical operators aloow you to combine more than one set of comparison operators.
+  - `===, !==, ==, !=, <, >, <=, >=` are used to compare two operands.
+- Logical operators allow you to combine more than one set of comparison operators.
 - Conditional statements allow your code to make decisions about what to do next.
 - `if...else` statements allow you to run one set of code if a condition is true, and another if it is false.
 - `switch` statements allow you to compare a value against possible outcomes and also provides a default option if none match.
 - Data types can be coerced from one type to another.
 - All values evaluate to either truthy or falsy.
-- Therea re three types of loop: `for`, `while`, and `do...while`; each represents a set of statements.
+- There are three types of loop: `for`, `while`, and `do...while`; each represents a set of statements.
 
 ### Chapter 5 / Document Object Model: 
 - The browser represents the page using a DOM tree.
@@ -66,7 +66,7 @@
 - When you select a text node, you can retrieve or amend the content of it using the `nodeValue` property.
 - Use `textContent` over `innerText` to collect or update just the text that is in the containing element and its children.
 - The `innerHTML` property can access and amend the contents of an element, including any child elements; it is unsafe to use compared to DOM manipulation.
-  - Cross-Site Scripting Attacks or XXS: gives attacker access to the DOM, form data, cookies, session tokens, access accounts
+  - Cross-Site Scripting Attacks or XXS: gives attacker access to the DOM, form data, cookies, session tokens, access accounts.
   - Validate input going to the server:
     1. Browser requests pages from and sends form data to web server.
     2. Web server collects information from the browser and passes it to a database.
@@ -116,8 +116,8 @@
 - To use an API on your website, you will need to inclide a script in the relevant web pages.
 - An API's documentation will usually feature tables of objects, methods, and properties. 
 - Web storage (HTML5 storage) lets you store data in the browser:
-  - `localStorage` data is stored when you close a window/tab and all open windows/tabs can access the data
-  - `sessionStorage` is more suited to information that changes frequently and/or is personal and should not be viewed by other users of the device
+  - `localStorage` data is stored when you close a window/tab and all open windows/tabs can access the data.
+  - `sessionStorage` is more suited to information that changes frequently and/or is personal and should not be viewed by other users of the device.
 - Providing you know how to create an object and call its methods, access it properties, and respond to its events, you should be able to learn any JavaScript API.
 
 ### Chapter 10 / Error Handling & Debugging:
